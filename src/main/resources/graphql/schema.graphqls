@@ -1,0 +1,28 @@
+type Query {
+  bookById(id: ID): Book
+}
+
+type Book {
+  id: ID
+  name: String
+  pageCount: Int
+  author: Author
+  library: LibraryT
+  pokemon: Pokemon
+}
+
+type Author {
+  id: ID
+  firstName: String
+  lastName: String
+}
+
+type LibraryT {
+  id: ID
+  nome: String!
+}
+
+type Pokemon {
+  id: ID
+  name: String!
+}
